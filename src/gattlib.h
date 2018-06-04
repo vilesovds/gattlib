@@ -83,6 +83,7 @@ public:
 	void discover_primary_async(GATTResponse* response);
 	boost::python::list discover_characteristics(int start = 0x0001, int end = 0xffff, std::string uuid = "");
 	void discover_characteristics_async(GATTResponse* response, int start = 0x0001, int end = 0xffff, std::string uuid = "");
+	void change_address(std::string address);
 private:
 	void check_channel();
 	void check_connected();

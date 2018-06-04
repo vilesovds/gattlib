@@ -501,6 +501,12 @@ GATTRequester::check_channel() {
     }
 }
 
+void 
+GATTRequester::change_address(std::string address)
+{
+	this->_address.assign(address)
+}
+
 static void
 discover_primary_cb(guint8 status, GSList *services, void *userp) {
 

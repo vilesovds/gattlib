@@ -147,7 +147,8 @@ BOOST_PYTHON_MODULE(gattlib) {
                 GATTRequester_discover_characteristics_overloads())
         .def("discover_characteristics_async",
                 &GATTRequester::discover_characteristics_async,
-                GATTRequester_discover_characteristics_async_overloads());
+                GATTRequester_discover_characteristics_async_overloads())
+		.def("change_address",&GATTRequester::change_address);
 
     register_ptr_to_python<GATTResponse*>();
 
