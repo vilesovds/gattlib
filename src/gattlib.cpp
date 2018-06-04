@@ -504,7 +504,7 @@ GATTRequester::check_channel() {
 void 
 GATTRequester::change_address(std::string address)
 {
-	this->_address.assign(address)
+	this->_address.assign(address);
 }
 
 static void
